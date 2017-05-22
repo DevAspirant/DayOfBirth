@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DayOfBirth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="kgt-ng-s0y">
+                                <rect key="frame" x="0.0" y="114" width="414" height="285"/>
+                                <date key="date" timeIntervalSinceReferenceDate="517070048.27978098">
+                                    <!--2017-05-21 14:34:08 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="up4-Bn-wot">
+                                <rect key="frame" x="0.0" y="496" width="414" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="GJD-jh-OGx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZX-Ld-d6C">
+                                <rect key="frame" x="0.0" y="407" width="414" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="bzw-vE-W2G"/>
+                                </constraints>
+                                <state key="normal" title="Get the Age"/>
+                                <connections>
+                                    <action selector="GetTheAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bl8-8A-BqA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your DOB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joW-7F-PcK">
+                                <rect key="frame" x="0.0" y="67" width="414" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="7QU-nA-Tpr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kgt-ng-s0y" firstAttribute="trailing" secondItem="pZX-Ld-d6C" secondAttribute="trailing" id="2q1-Tj-0sx"/>
+                            <constraint firstItem="kgt-ng-s0y" firstAttribute="leading" secondItem="joW-7F-PcK" secondAttribute="leading" id="9kW-rB-aV3"/>
+                            <constraint firstAttribute="trailing" secondItem="pZX-Ld-d6C" secondAttribute="trailing" id="EaL-Il-CR0"/>
+                            <constraint firstItem="up4-Bn-wot" firstAttribute="top" secondItem="pZX-Ld-d6C" secondAttribute="bottom" constant="37" id="HBk-hN-sks"/>
+                            <constraint firstItem="up4-Bn-wot" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KNe-JO-eth"/>
+                            <constraint firstAttribute="trailing" secondItem="joW-7F-PcK" secondAttribute="trailing" id="Kk0-rJ-7rH"/>
+                            <constraint firstItem="pZX-Ld-d6C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ODC-ck-diQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="up4-Bn-wot" secondAttribute="bottom" constant="201" id="OkU-gV-kwQ"/>
+                            <constraint firstItem="kgt-ng-s0y" firstAttribute="trailing" secondItem="up4-Bn-wot" secondAttribute="trailing" id="VQD-g3-His"/>
+                            <constraint firstItem="kgt-ng-s0y" firstAttribute="leading" secondItem="pZX-Ld-d6C" secondAttribute="leading" id="qDy-qi-ZBN"/>
+                            <constraint firstItem="pZX-Ld-d6C" firstAttribute="top" secondItem="kgt-ng-s0y" secondAttribute="bottom" constant="8" symbolic="YES" id="sK8-tD-7rQ"/>
+                            <constraint firstItem="joW-7F-PcK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tln-6m-9TV"/>
+                            <constraint firstItem="kgt-ng-s0y" firstAttribute="top" secondItem="joW-7F-PcK" secondAttribute="bottom" constant="8" symbolic="YES" id="wG1-zY-I2U"/>
+                            <constraint firstAttribute="trailing" secondItem="up4-Bn-wot" secondAttribute="trailing" id="wIg-Re-9hb"/>
+                            <constraint firstItem="kgt-ng-s0y" firstAttribute="trailing" secondItem="joW-7F-PcK" secondAttribute="trailing" id="wTY-qT-U5B"/>
+                            <constraint firstItem="joW-7F-PcK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="wcH-KM-FXR"/>
+                            <constraint firstItem="kgt-ng-s0y" firstAttribute="leading" secondItem="up4-Bn-wot" secondAttribute="leading" id="y1G-DZ-Ehr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DOBResult" destination="up4-Bn-wot" id="6fn-ty-6Pa"/>
+                        <outlet property="DatePicker" destination="kgt-ng-s0y" id="wig-9D-WYg"/>
+                        <outlet property="GetTheAgeButton" destination="pZX-Ld-d6C" id="ePW-vE-hq0"/>
+                        <outlet property="IntroLabel" destination="joW-7F-PcK" id="Fze-U6-EEN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
